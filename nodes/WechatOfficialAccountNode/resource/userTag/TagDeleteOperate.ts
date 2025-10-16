@@ -26,7 +26,7 @@ const TagDeleteOperate  : ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/tags/delete`,
 			body,
-		});
+		}, index);
 	}
 };
 

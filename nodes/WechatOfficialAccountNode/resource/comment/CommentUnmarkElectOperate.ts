@@ -46,7 +46,7 @@ const CommentUnmarkElectOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/comment/unmarkelect`,
 			body,
-		});
+		}, index);
 	},
 };
 

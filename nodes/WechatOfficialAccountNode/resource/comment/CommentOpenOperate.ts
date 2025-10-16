@@ -38,7 +38,7 @@ const CommentOpenOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/comment/open`,
 			body,
-		});
+		}, index);
 	},
 };
 

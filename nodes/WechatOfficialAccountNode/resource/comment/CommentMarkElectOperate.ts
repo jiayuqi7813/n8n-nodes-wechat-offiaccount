@@ -46,7 +46,7 @@ const CommentMarkElectOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/comment/markelect`,
 			body,
-		});
+		}, index);
 	},
 };
 

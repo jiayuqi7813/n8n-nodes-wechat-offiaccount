@@ -27,7 +27,7 @@ const PublishGetArticleOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/freepublish/getarticle`,
 			body,
-		});
+		}, index);
 	},
 };
 

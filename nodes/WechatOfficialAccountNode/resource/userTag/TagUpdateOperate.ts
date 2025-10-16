@@ -35,7 +35,7 @@ const TagUpdateOperate  : ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/tags/update`,
 			body,
-		});
+		}, index);
 	}
 };
 

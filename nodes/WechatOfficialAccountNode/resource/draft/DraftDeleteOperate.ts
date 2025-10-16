@@ -26,7 +26,7 @@ const DraftDeleteOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/draft/delete`,
 			body,
-		});
+		}, index);
 	},
 };
 

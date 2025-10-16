@@ -44,7 +44,7 @@ const DraftListOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/draft/batchget`,
 			body,
-		});
+		}, index);
 	},
 };
 

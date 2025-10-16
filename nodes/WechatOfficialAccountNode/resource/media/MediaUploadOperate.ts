@@ -47,7 +47,7 @@ const MediaUploadOperate: ResourceOperations = {
 			formData: {
 				media: await NodeUtils.buildUploadFileData.call(this, inputDataFieldName, index),
 			},
-		});
+		}, index);
 	},
 };
 

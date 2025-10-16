@@ -36,7 +36,7 @@ const ShortenGenOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/shorten/gen`,
 			body,
-		});
+		}, index);
 	},
 };
 

@@ -78,7 +78,7 @@ const CommentListOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/comment/list`,
 			body,
-		});
+		}, index);
 	},
 };
 

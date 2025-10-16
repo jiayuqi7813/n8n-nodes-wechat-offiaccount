@@ -30,8 +30,8 @@ class ResourceBuilder {
 			noDataExpression: true,
 			options: this.resources.map((item) => {
 				return {
-					...item,
-					operations: null,
+					name: item.name,
+					value: item.value,
 				};
 			}),
 			default: '',
@@ -51,8 +51,8 @@ class ResourceBuilder {
 				},
 				options: resource.operations.map((item) => {
 					return {
-						...item,
-						options: null,
+						name: item.name,
+						value: item.value,
 					};
 				}),
 				default: '',
@@ -75,6 +75,58 @@ class ResourceBuilder {
 				}
 			}
 		}
+
+		// 添加全局Options配置
+		list.push({
+			displayName: 'Options',
+			name: 'options',
+			type: 'collection',
+			placeholder: 'Add Option',
+			default: {},
+			options: [
+				{
+					displayName: 'Proxy',
+					name: 'proxy',
+					type: 'string',
+					default: '',
+					placeholder: 'http://username:password@proxy.example.com:8080',
+					description: '代理服务器地址，格式：http://[username:password@]host:port',
+				},
+				{
+					displayName: 'Timeout',
+					name: 'timeout',
+					type: 'number',
+					default: 10,
+					description: '请求超时时间（秒）',
+				},
+				{
+					displayName: 'Ignore SSL Issues',
+					name: 'allowUnauthorizedCerts',
+					type: 'boolean',
+					default: false,
+					description: '是否忽略SSL证书验证错误',
+				},
+				{
+					displayName: 'Follow Redirect',
+					name: 'followRedirect',
+					type: 'boolean',
+					default: true,
+					description: '是否自动跟随重定向',
+				},
+				{
+					displayName: 'Max Redirects',
+					name: 'maxRedirects',
+					type: 'number',
+					default: 21,
+					description: '最大重定向次数',
+					displayOptions: {
+						show: {
+							followRedirect: [true],
+						},
+					},
+				},
+			],
+		});
 
 		return list;
 	}

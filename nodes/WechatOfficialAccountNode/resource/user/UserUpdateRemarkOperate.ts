@@ -36,7 +36,7 @@ const UserUpdateRemarkOperate  : ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/user/info/updateremark`,
 			body,
-		});
+		}, index);
 	}
 };
 

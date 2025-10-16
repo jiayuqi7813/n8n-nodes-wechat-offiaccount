@@ -11,7 +11,7 @@ const TemplateListOperate: ResourceOperations = {
 		return RequestUtils.request.call(this, {
 			method: 'GET',
 			url: `/cgi-bin/template/get_all_private_template`,
-		});
+		}, index);
 	},
 };
 

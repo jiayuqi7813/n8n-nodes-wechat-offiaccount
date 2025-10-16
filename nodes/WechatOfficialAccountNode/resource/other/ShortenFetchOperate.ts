@@ -26,7 +26,7 @@ const ShortenFetchOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/shorten/fetch`,
 			body,
-		});
+		}, index);
 	},
 };
 

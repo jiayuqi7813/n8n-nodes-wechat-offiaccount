@@ -64,7 +64,7 @@ export default {
 			}
 		},
 	],
-	async call(this: IExecuteFunctions, index: number): Promise<IDataObject> {
+	async call(this: IExecuteFunctions, index: number, proxy?: string): Promise<IDataObject> {
 		const type = this.getNodeParameter('type', index) as string;
 		const inputDataFieldName = this.getNodeParameter('inputDataFieldName', index) as string;
 
@@ -89,6 +89,6 @@ export default {
 				type
 			},
 			formData: formData,
-		});
+		}, index);
 	},
 } as ResourceOperations;

@@ -36,7 +36,7 @@ const UserGetOperate  : ResourceOperations = {
 			method: 'GET',
 			url: `/cgi-bin/user/info`,
 			qs: query,
-		});
+		}, index);
 	}
 };
 

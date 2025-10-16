@@ -26,7 +26,7 @@ const TagGetIdListOperate  : ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/tags/getidlist`,
 			body,
-		});
+		}, index);
 	}
 };
 

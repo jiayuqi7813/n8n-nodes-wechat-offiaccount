@@ -21,7 +21,10 @@ export class WechatOfficialAccountResponseNode implements INodeType {
 		defaults: {
 			name: 'Wechat Official Account Response',
 		},
-		hint: '用于处理微信公众号的响应数据，请最后使用response节点进行响应',
+		hints: [{
+		message: '用于处理微信公众号的响应数据，请最后使用response节点进行响应',
+		type: 'info' as const,
+	}],
 		// @ts-ignore
 		inputs: ['main'],
 		// @ts-ignore

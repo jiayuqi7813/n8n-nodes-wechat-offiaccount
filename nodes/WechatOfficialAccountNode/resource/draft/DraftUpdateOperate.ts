@@ -47,7 +47,7 @@ const DraftUpdateOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/draft/update`,
 			body,
-		});
+		}, index);
 	},
 };
 

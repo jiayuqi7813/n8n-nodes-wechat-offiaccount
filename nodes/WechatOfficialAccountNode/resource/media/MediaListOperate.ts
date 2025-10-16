@@ -53,7 +53,7 @@ const MediaListOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/material/batchget_material`,
 			body,
-		});
+		}, index);
 	},
 };
 

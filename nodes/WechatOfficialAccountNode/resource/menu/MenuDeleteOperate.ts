@@ -11,7 +11,7 @@ const MenuDeleteOperate: ResourceOperations = {
 		return RequestUtils.request.call(this, {
 			method: 'GET',
 			url: `/cgi-bin/menu/delete`,
-		});
+		}, index);
 	},
 };
 

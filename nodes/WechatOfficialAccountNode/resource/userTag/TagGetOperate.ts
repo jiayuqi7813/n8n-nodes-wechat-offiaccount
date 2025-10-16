@@ -11,7 +11,7 @@ const TagGetOperate  : ResourceOperations = {
 		return RequestUtils.request.call(this, {
 			method: 'GET',
 			url: `/cgi-bin/tags/get`,
-		});
+		}, index);
 	}
 };
 

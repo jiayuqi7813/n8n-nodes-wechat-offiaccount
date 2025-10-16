@@ -27,7 +27,7 @@ const UserListOperate  : ResourceOperations = {
 			method: 'GET',
 			url: `/cgi-bin/user/get`,
 			qs: data,
-		});
+		}, index);
 	}
 };
 

@@ -54,7 +54,7 @@ const TagBatchUntaggingOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/tags/members/batchuntagging`,
 			body,
-		});
+		}, index);
 	}
 };
 

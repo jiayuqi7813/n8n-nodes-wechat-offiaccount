@@ -45,7 +45,7 @@ const PublishListOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/freepublish/batchget`,
 			body,
-		});
+		}, index);
 	},
 };
 

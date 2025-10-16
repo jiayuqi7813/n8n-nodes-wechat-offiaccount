@@ -16,7 +16,7 @@ const TemplateDeleteOperate: ResourceOperations = {
 			description: '公众账号下模板消息ID, 包括类目模板ID',
 		},
 	],
-	async call(this: IExecuteFunctions, index: number): Promise<IDataObject> {
+	async call(this: IExecuteFunctions, index: number, proxy?: string): Promise<IDataObject> {
 		const templateId = this.getNodeParameter('template_id', index) as string;
 
 		return RequestUtils.request.call(this, {
@@ -25,7 +25,7 @@ const TemplateDeleteOperate: ResourceOperations = {
 			body: {
 				template_id: templateId,
 			},
-		});
+		}, index);
 	},
 };
 

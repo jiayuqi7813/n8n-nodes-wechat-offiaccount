@@ -14,7 +14,7 @@ const MediaGetMaterialOperate: ResourceOperations = {
 			default: '',
 		},
 	],
-	async call(this: IExecuteFunctions, index: number): Promise<IDataObject> {
+	async call(this: IExecuteFunctions, index: number, proxy?: string): Promise<IDataObject> {
 		const mediaId = this.getNodeParameter('media_id', index) as string;
 
 		return RequestUtils.request.call(this, {
@@ -23,7 +23,7 @@ const MediaGetMaterialOperate: ResourceOperations = {
 			body: {
 				media_id: mediaId,
 			},
-		});
+		}, index);
 	},
 };
 

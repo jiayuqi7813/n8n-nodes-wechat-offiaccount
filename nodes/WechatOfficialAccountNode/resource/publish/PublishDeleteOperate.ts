@@ -36,7 +36,7 @@ const PublishDeleteOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/freepublish/delete`,
 			body,
-		});
+		}, index);
 	},
 };
 

@@ -11,7 +11,7 @@ export default {
 		await RequestUtils.request.call(this, {
 			method: 'GET',
 			url: `/cgi-bin/get_api_domain_ip`,
-		});
+		}, index);
 
 		const credentials = await this.getCredentials('wechatOfficialAccountCredentialsApi');
 

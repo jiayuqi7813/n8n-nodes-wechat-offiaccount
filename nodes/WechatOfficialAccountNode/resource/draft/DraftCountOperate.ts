@@ -11,7 +11,7 @@ const DraftCountOperate: ResourceOperations = {
 		return RequestUtils.request.call(this, {
 			method: 'GET',
 			url: `/cgi-bin/draft/count`,
-		});
+		}, index);
 	},
 };
 

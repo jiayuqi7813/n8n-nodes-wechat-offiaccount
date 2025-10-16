@@ -35,7 +35,7 @@ const TagGetUserListOperate  : ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/user/tag/get`,
 			body,
-		});
+		}, index);
 	}
 };
 

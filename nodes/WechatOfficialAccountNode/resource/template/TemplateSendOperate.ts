@@ -96,7 +96,7 @@ const TemplateSendOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/message/template/send`,
 			body,
-		});
+		}, index);
 	},
 };
 

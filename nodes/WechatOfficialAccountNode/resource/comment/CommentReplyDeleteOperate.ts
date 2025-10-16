@@ -45,7 +45,7 @@ const CommentReplyDeleteOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/comment/reply/delete`,
 			body,
-		});
+		}, index);
 	},
 };
 

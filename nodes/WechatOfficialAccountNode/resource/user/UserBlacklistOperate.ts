@@ -7,12 +7,12 @@ const UserBlacklistOperate  : ResourceOperations = {
 	value: 'user:getBlacklist',
 	description: '获取账号的黑名单列表',
 	options: [],
-	async call(this: IExecuteFunctions, index: number): Promise<IDataObject> {
+	async call(this: IExecuteFunctions, index: number, proxy?: string): Promise<IDataObject> {
 		return RequestUtils.request.call(this, {
 			method: 'POST',
 			url: `/cgi-bin/tags/members/getblacklist`,
 			body: {},
-		});
+		}, index);
 	}
 };
 

@@ -46,7 +46,7 @@ const UserBatchBlacklistOperate  : ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/tags/members/batchblacklist`,
 			body,
-		});
+		}, index);
 	}
 };
 

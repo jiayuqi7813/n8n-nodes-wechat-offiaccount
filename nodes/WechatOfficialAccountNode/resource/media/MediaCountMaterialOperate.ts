@@ -10,7 +10,7 @@ const MediaCountMaterialOperate: ResourceOperations = {
 		return RequestUtils.request.call(this, {
 			method: 'GET',
 			url: `/cgi-bin/material/get_materialcount`,
-		});
+		}, index);
 	},
 };
 

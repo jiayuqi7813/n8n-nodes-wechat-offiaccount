@@ -25,7 +25,7 @@ const MenuCreateOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/menu/create`,
 			body: data,
-		});
+		}, index);
 	},
 };
 

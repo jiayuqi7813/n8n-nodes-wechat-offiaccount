@@ -36,7 +36,7 @@ const CommentCloseOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/comment/close`,
 			body,
-		});
+		}, index);
 	},
 };
 

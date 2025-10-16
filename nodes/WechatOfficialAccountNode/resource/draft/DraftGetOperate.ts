@@ -26,7 +26,7 @@ const DraftGetOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/draft/get`,
 			body,
-		});
+		}, index);
 	},
 };
 

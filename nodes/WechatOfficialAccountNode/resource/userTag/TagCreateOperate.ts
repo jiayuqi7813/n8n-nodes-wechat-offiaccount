@@ -27,7 +27,7 @@ const TagCreateOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/tags/create`,
 			body,
-		});
+		}, index);
 	}
 };
 

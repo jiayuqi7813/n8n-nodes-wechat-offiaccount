@@ -55,7 +55,7 @@ const CommentReplyAddOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/comment/reply/add`,
 			body,
-		});
+		}, index);
 	},
 };
 

@@ -17,7 +17,7 @@ const DraftAddOperate: ResourceOperations = {
 			description: '参考文档：https://developers.weixin.qq.com/doc/offiaccount/Draft_Box/Add_draft.html',
 		},
 	],
-	async call(this: IExecuteFunctions, index: number): Promise<IDataObject> {
+	async call(this: IExecuteFunctions, index: number, proxy?: string): Promise<IDataObject> {
 		const articles = NodeUtils.getNodeJsonData(this, 'articles', index) as object;
 
 		return RequestUtils.request.call(this, {
@@ -26,7 +26,7 @@ const DraftAddOperate: ResourceOperations = {
 			body: {
 				articles,
 			},
-		});
+		}, index);
 	},
 };
 

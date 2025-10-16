@@ -59,7 +59,7 @@ const QRCodeGenerateOperate: ResourceOperations = {
 			method: 'POST',
 			url: `/cgi-bin/qrcode/create`,
 			body,
-		});
+		}, index);
 	},
 };
 

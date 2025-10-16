@@ -11,7 +11,7 @@ const MenuGetOperate: ResourceOperations = {
 		return RequestUtils.request.call(this, {
 			method: 'GET',
 			url: `/cgi-bin/get_current_selfmenu_info`,
-		});
+		}, index);
 	},
 };
 
