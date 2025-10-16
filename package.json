@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-wechat-offiaccount-proxy",
-  "version": "0.3.7",
+  "version": "1.0.0",
   "description": "wechat offiaccount node",
   "keywords": [
     "n8n-community-node-package",
