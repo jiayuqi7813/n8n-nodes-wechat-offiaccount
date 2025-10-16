@@ -1,4 +1,4 @@
-import { INodePropertyOptions } from 'n8n-workflow';
+import { INodePropertyOptions } from 'n8n-workflow/dist/Interfaces';
 
 export default {
 	name: '授权',

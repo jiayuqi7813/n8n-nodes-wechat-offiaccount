@@ -1,4 +1,4 @@
-import { INodePropertyOptions } from 'n8n-workflow';
+import { INodePropertyOptions } from 'n8n-workflow/dist/Interfaces';
 
 const OtherResource: INodePropertyOptions = {
 	name: '其他',
