@@ -1,4 +1,4 @@
-import { INodePropertyOptions } from 'n8n-workflow/dist/Interfaces';
+import { INodePropertyOptions } from 'n8n-workflow';
 
 const UserTagResource: INodePropertyOptions = {
 	name: '用户标签',

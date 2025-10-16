@@ -1,5 +1,5 @@
 import {INodeType, INodeTypeDescription, NodeOperationError} from 'n8n-workflow';
-import { IWebhookFunctions, IWebhookResponseData } from 'n8n-workflow/dist/Interfaces';
+import { IWebhookFunctions, IWebhookResponseData } from 'n8n-workflow';
 import WechatMsgSignUtils from "../help/utils/WechatMsgSignUtils";
 
 export class WechatOfficialAccountTrigger implements INodeType {

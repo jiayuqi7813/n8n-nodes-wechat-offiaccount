@@ -5,7 +5,7 @@ import {
 	NodeOperationError,
 	NodeTypeAndVersion,
 } from 'n8n-workflow';
-import { INodeExecutionData } from 'n8n-workflow/dist/Interfaces';
+import { INodeExecutionData } from 'n8n-workflow';
 import WechatMsgSignUtils from '../help/utils/WechatMsgSignUtils';
 import xmlConvert from 'xml-js';
 
