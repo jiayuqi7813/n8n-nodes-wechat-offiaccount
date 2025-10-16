@@ -1,21 +1,24 @@
 {
-  "name": "n8n-nodes-wechat-offiaccount-proxy",
+  "name": "n8n-nodes-wechat-offiaccount-enhanced",
   "version": "1.0.0",
-  "description": "wechat offiaccount node",
+  "description": "Enhanced wechat official account node with additional features (fork from n8n-nodes-wechat-offiaccount)",
   "keywords": [
     "n8n-community-node-package",
-    "wehcat",
-    "wehcat-offiaccount"
+    "wechat",
+    "wechat-offiaccount",
+    "enhanced",
+    "fork",
+    "微信公众号"
   ],
   "license": "MIT",
   "homepage": "",
   "author": {
-    "name": "blowsnow",
-    "email": "im.blowsnow@gmail.com"
+    "name": "Sn1waR",
+    "email": "1783671926@qq.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/other-blowsnow/n8n-nodes-wechat-offiaccount"
+    "url": "https://github.com/jiayuqi7813/n8n-nodes-wechat-offiaccount"
   },
   "engines": {
     "node": ">=18.10",

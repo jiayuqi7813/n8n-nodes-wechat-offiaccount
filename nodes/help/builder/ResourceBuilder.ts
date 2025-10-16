@@ -104,7 +104,7 @@ class ResourceBuilder {
 					name: 'allowUnauthorizedCerts',
 					type: 'boolean',
 					default: false,
-					description: '是否忽略SSL证书验证错误',
+					description: 'Whether to connect even if SSL certificate validation is not possible',
 				},
 				{
 					displayName: 'Follow Redirect',
