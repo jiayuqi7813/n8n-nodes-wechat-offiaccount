@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-wechat-offiaccount",
+  "name": "n8n-nodes-wechat-offiaccount-proxy",
   "version": "0.3.7",
   "description": "wechat offiaccount node",
   "keywords": [
